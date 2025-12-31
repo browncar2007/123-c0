@@ -1,8 +1,12 @@
+// Caronn Brown
+// 11/21/2025
+// CSE 123
+// C0: Search Engine
+// TA: 
+
 import java.io.*;
 import java.util.*;
-// Name: Caronn Brown
-// Date: 
-
+// Class Comment:
 // This class allows users to find and rate books within BOOK_DIRECTORY
 // containing certain terms
 public class SearchClient {
@@ -39,7 +43,10 @@ public class SearchClient {
         System.out.println("See you next time!");
     }
 
-    // TODO: Paste createIndex implementation & comment
+// B: 
+// E: 
+// R: 
+// P: 
     public static Map<String, Set<Media>> createIndex(List<Media> docs) {
         Map<String, Set<Media>> index = new TreeMap<>();
         for(Media doc : docs) {
@@ -54,7 +61,10 @@ public class SearchClient {
         return index;
     }
 
-    // TODO: Write and document your search method here
+// B: 
+// E: 
+// R: 
+// P: 
     public static Set<Media> search(Map<String, Set<Media>> index, String query) {
         if(index.containsKey(query.toLowerCase())){
             return index.get(query.toLowerCase());
